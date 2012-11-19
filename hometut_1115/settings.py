@@ -1,4 +1,11 @@
+# import django
+# import os
+# 
+# VERSION = 0.3
+
 # Django settings for hometut_1115 project.
+# SITE_ROOT = os.path.dirname(os.path.dirname(os.path.realpath(__file__)))
+
 
 DEBUG = True
 TEMPLATE_DEBUG = DEBUG
@@ -103,7 +110,9 @@ ROOT_URLCONF = 'hometut_1115.urls'
 WSGI_APPLICATION = 'hometut_1115.wsgi.application'
 
 TEMPLATE_DIRS = (
-    '/Users/grooves/projects/hometut_1115/mytemplates',
+    '../hometut_1115/mytemplates/',
+    '../hometut_1115/polls/',
+    # SITE_ROOT + "/templates",
 	# Put strings here, like "/home/html/django_templates" or "C:/www/django/templates".
     # Always use forward slashes, even on Windows.
     # Don't forget to use absolute paths, not relative paths.
